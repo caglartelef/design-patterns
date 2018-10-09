@@ -13,7 +13,7 @@ public class MyClass {
 
 	public static MyClass getInstance() {
 		if (null == myInstance) {
-			synchronized (myInstance) {
+			synchronized (MyClass.class) {
 				if (null == myInstance) {
 					myInstance = new MyClass();
 				}
